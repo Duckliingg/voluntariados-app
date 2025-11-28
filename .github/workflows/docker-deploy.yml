@@ -1,0 +1,39 @@
+name: Build & Push Docker Image
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          docker build -t duckliingg/voluntariados-app:latest .
+
+      - name: Push Docker image
+        run: |
+          docker push duckliingg/voluntariados-app:latest
+
+      - name: Run container to test DB connections
+        run: |
+          docker run -d --name test-app duckliingg/voluntariados-app:latest
+          sleep 10
+          docker exec test-app php /var/www/html/test_mysql.php
+          docker exec test-app php /var/www/html/test_mongo.php
+
+      - name: Stop and remove test container
+        run: |
+          docker stop test-app
+          docker rm test-app

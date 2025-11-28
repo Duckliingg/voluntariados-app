@@ -1,0 +1,39 @@
+# ARCHIVOS CONFIGURADOS
+.env
+config/*.php
+
+# ARCHIVOS DE USUARIOS
+public/uploads/
+
+# COMPOSER
+vendor/
+composer.lock
+composer.phar
+
+# RESPALDOS
+*.bak
+
+# DOCKER
+mysql_data/
+docker/mysql_data/
+
+# LOGS
+*.log
+logs/
+
+# CACHES / TEMP
+*.tmp
+*.temp
+*.cache
+cache/
+tmp/
+temp/
+
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# NODE 
+node_modules/
