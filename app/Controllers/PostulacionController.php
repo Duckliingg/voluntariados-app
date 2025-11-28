@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // app/Controllers/PostulacionController.php
 
 require_once __DIR__ . '/BaseController.php';

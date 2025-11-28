@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // Fecha de hoy
 $hoy = date('Y-m-d');
 echo "Hoy: " . $hoy . "<br>";

@@ -1,11 +1,10 @@
-﻿<?php
+<?php
 // views/estudiantes/dashboard.php
-// Variables: estadísticas del estudiante
 
 $userType = 'estudiante';
 include __DIR__ . '/../layouts/header.php';
 
-// Obtener insignias del estudiante (debes pasar esta variable desde el controlador)
+// Obtener insignias del estudiante
 $totalInsignias = $totalInsignias ?? 0;
 $insigniasRecientes = $insigniasRecientes ?? [];
 ?>
@@ -63,7 +62,7 @@ $insigniasRecientes = $insigniasRecientes ?? [];
 </div>
 <?php endif; ?>
 
-<!-- Convocatorias disponibles (tu código existente) -->
+<!-- Convocatorias disponibles -->
 <h3 class="mt-30">Convocatorias Disponibles</h3>
 <?php if(empty($convocatorias)): ?>
     <p>No hay convocatorias disponibles en este momento.</p>
@@ -106,7 +105,7 @@ $insigniasRecientes = $insigniasRecientes ?? [];
     </div>
 <?php endif; ?>
 
-<!-- Mis últimas postulaciones (tu código existente) -->
+<!-- Mis últimas postulaciones -->
 <h3 class="mt-30">Mis Últimas Postulaciones</h3>
 <?php if(empty($misPostulaciones)): ?>
     <p>Aún no has realizado ninguna postulación.</p>
@@ -201,5 +200,3 @@ $insigniasRecientes = $insigniasRecientes ?? [];
 </style>
 
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
-
-

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // public/estudiantes/historial/index.php
 
 require_once __DIR__ . '/../../../config/config.php';

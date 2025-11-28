@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/auth/login_admin.php
 // Variables: $error
 

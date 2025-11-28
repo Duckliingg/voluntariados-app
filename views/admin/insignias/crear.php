@@ -90,7 +90,7 @@ include __DIR__ . '/../../layouts/header.php';
                 <div class="preview-body">
                     <h3 id="previewNombre">Nombre de la insignia</h3>
                     <p id="previewDescripcion">Descripción de la insignia</p>
-                    <span class="preview-criterio" id="previewCriterio">📊 80% asistencia</span>
+                    <span class="preview-criterio" id="previewCriterio"> 80% asistencia</span>
                 </div>
             </div>
         </div>

@@ -24,9 +24,8 @@ class DocenteController extends BaseController {
         $this->insigniaService = new InsigniaService();
     }
     
-    /**
-     * Dashboard del docente
-     */
+     // Dashboard del docente
+     
     public function dashboard() {
         // Verificar que es docente
         if (!isset($_SESSION['docente_id'])) {
@@ -42,9 +41,8 @@ class DocenteController extends BaseController {
         ]);
     }
     
-    /**
-     * Listar convocatorias para tomar asistencia
-     */
+    // Listar convocatorias para tomar asistencia
+     
     public function listarConvocatorias() {
         if (!isset($_SESSION['docente_id'])) {
             $this->redirect('../auth/login.php');
@@ -59,16 +57,14 @@ class DocenteController extends BaseController {
         ]);
     }
     
-    /**
-     * Tomar asistencia para una convocatoria específica
-     */
+    // Tomar asistencia para una convocatoria específica
+    
     public function tomarAsistencia($convocatoriaId) {
         if (!isset($_SESSION['docente_id'])) {
             $this->redirect('../auth/login.php');
         }
         
-        // AQUÍ ESTÁ EL CAMBIO IMPORTANTE
-        // Obtener estudiantes aprobados usando el PostulacionRepository
+        // Obtener estudiantes aprobados
         $estudiantes = $this->postulacionRepository->obtenerEstudiantesAprobados($convocatoriaId);
         
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -82,9 +78,8 @@ class DocenteController extends BaseController {
         ]);
     }
     
-    /**
-     * Procesar el formulario de asistencia
-     */
+    // Procesar el formulario de asistencia
+
     private function procesarAsistencia($convocatoriaId, $postData) {
         $docenteId = $_SESSION['docente_id'];
         

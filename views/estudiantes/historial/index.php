@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/estudiantes/historial/index.php
 // Variables: $postulaciones, $success, $error
 

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/admin/postulaciones/index.php
 // Variables: $postulaciones, $success, $error
 
@@ -60,4 +60,3 @@ include __DIR__ . '/../../layouts/header.php';
 <?php endif; ?>
 
 <?php include __DIR__ . '/../../layouts/footer.php'; ?>
-

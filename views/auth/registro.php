@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/auth/registro.php
 // Variables: $error, $success, $postData
 

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // app/Controllers/DashboardController.php
 
 require_once __DIR__ . '/BaseController.php';
@@ -45,7 +45,7 @@ class DashboardController extends BaseController {
         ]);
     }
     
-// Dashboard Estudiante
+    // Dashboard Estudiante
     public function dashboardEstudiante() {
         $this->requireAuth('estudiante', '../auth/login.php');
 
@@ -64,7 +64,7 @@ class DashboardController extends BaseController {
             if ($post->estado == 'pendiente') $postulacionesPendientes++;
         }
 
-        // NUEVO: Obtener insignias del estudiante
+        // Obtener insignias del estudiante
         require_once __DIR__ . '/../Services/InsigniaService.php';
         $insigniaService = new InsigniaService();
         $insigniasEstudiante = $insigniaService->obtenerInsigniasUsuario($estudianteId);
@@ -84,7 +84,6 @@ class DashboardController extends BaseController {
         ]);
     }
 
-    
     // Página de inicio pública
     public function index() {
         $convocatorias = $this->convocatoriaService->obtenerActivas();
@@ -96,4 +95,3 @@ class DashboardController extends BaseController {
         ]);
     }
 }
-

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $userType = 'docente';
 require_once __DIR__ . '/../layouts/header.php';
 ?>

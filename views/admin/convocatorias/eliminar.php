@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/admin/convocatorias/eliminar.php
 // Variables: $convocatoria
 

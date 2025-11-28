@@ -1,5 +1,4 @@
-﻿<?php
-// views/layouts/footer.php
+<?php
 ?>
             </div>
         </div>

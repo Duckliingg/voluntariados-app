@@ -175,5 +175,4 @@ class InsigniaController extends BaseController {
             'insignias' => $insignias
         ]);
     }
-
 }

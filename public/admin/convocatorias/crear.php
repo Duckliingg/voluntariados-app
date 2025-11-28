@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // public/admin/convocatorias/crear.php
 
 require_once __DIR__ . '/../../../config/config.php';

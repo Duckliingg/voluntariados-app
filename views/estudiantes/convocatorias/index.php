@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/estudiantes/convocatorias/index.php
 // Variables: $convocatorias, $success, $error
 
@@ -55,5 +55,3 @@ include __DIR__ . '/../../layouts/header.php';
 <?php endif; ?>
 
 <?php include __DIR__ . '/../../layouts/footer.php'; ?>
-
-

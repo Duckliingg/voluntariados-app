@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/public/index.php
 // Variables: $convocatorias
 $userType = 'public';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class Convocatoria {
     public $id;
     public $titulo;

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/../Repositories/PostulacionRepository.php';
 require_once __DIR__ . '/../Repositories/ConvocatoriaRepository.php';
 

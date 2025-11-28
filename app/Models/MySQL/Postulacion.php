@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class Postulacion {
     public $id;
     public $estudiante_id;

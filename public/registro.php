@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // public/registro.php
 
 require_once __DIR__ . '/../config/config.php';

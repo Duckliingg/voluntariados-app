@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/admin/dashboard.php
 // Variables: estadísticas y datos del dashboard
 

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // app/Controllers/BaseController.php
 class BaseController {
     protected function render($view, $data = []) {

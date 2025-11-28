@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     initHeroSlider();
 
     // 2. CONFIRMACION PARA ACCIONES PELIGROSAS
@@ -136,7 +136,7 @@ function togglePassword(inputId) {
     input.setAttribute('type', type);
 }
 
-// Funcion para contar caracteres en textareas (sin CSS inline)
+// Funcion para contar caracteres en textareas
 function setupCharacterCount(textareaId, maxLength) {
     const textarea = document.getElementById(textareaId);
     const counter = document.createElement('div');

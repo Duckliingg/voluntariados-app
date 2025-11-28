@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/estudiantes/convocatorias/postular.php
 // Variables: $convocatoria, $error
 
@@ -43,5 +43,3 @@ include __DIR__ . '/../../layouts/header.php';
 </form>
 
 <?php include __DIR__ . '/../../layouts/footer.php'; ?>
-
-

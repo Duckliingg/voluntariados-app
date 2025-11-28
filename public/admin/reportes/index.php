@@ -102,5 +102,3 @@ $postulaciones_por_convocatoria = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </section>
 </body>
 </html>
-
-

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/admin/convocatorias/crear.php
 // Variables: $error, $postData, $success, $docentes, $insignias
 
@@ -81,7 +81,7 @@ include __DIR__ . '/../../layouts/header.php';
         </select>
     </div>
 
-    <!-- NUEVO: Selector de Insignia -->
+    <!--Selector de Insignia -->
     <div class="form-group insignia-selector">
         <label class="form-label">
             Insignia a Otorgar 

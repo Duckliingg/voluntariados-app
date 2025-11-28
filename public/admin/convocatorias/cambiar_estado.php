@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // public/admin/convocatorias/cambiar_estado.php
 
 require_once __DIR__ . '/../../../config/config.php';

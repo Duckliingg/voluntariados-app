@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // public/docente/index.php
 require_once __DIR__ . '/../../app/Controllers/DocenteController.php';
 session_start();

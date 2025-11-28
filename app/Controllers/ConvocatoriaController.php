@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // app/Controllers/ConvocatoriaController.php
 
 require_once __DIR__ . '/BaseController.php';
@@ -74,7 +74,7 @@ class ConvocatoriaController extends BaseController {
             'pageTitle' => 'Crear Convocatoria',
             'baseUrl' => '../../',
             'docentes' => $docentes,
-            'insignias' => $insignias, // NUEVO
+            'insignias' => $insignias,
             'error' => $error ?? null,
             'postData' => $_POST ?? []
         ]);
@@ -112,7 +112,7 @@ class ConvocatoriaController extends BaseController {
                 'whatsapp_grupo' => trim($_POST['whatsapp_grupo'] ?? ''),
                 'tipo_voluntariado' => $_POST['tipo_voluntariado'] ?? 'social',
                 'docente_id' => $_POST['docente_id'] ?? null,
-                'insignia_id' => $_POST['insignia_id'] ?? null // NUEVO
+                'insignia_id' => $_POST['insignia_id'] ?? null
             ];
 
             $archivo = isset($_FILES['imagen']) ? $_FILES['imagen'] : null;
@@ -132,7 +132,7 @@ class ConvocatoriaController extends BaseController {
             'baseUrl' => '../../',
             'convocatoria' => $convocatoria,
             'docentes' => $docentes,
-            'insignias' => $insignias, // NUEVO
+            'insignias' => $insignias,
             'success' => $success ?? null,
             'error' => $error ?? null
         ]);

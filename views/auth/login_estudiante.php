@@ -1,5 +1,5 @@
-﻿<?php
-// views/auth/login.php - LOGIN UNIFICADO
+<?php
+// views/auth/login.php
 // Variables: $error, $success
 
 $pageTitle = 'Iniciar Sesión';

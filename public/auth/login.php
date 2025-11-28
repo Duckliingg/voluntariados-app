@@ -1,5 +1,5 @@
-﻿<?php
-// public/auth/login.php - LOGIN UNIFICADO para Estudiantes y Docentes
+<?php
+// public/auth/login.php
 session_start();
 
 // Si ya está autenticado, redirigir según tipo

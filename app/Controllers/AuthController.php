@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // app/Controllers/AuthController.php
 
 require_once __DIR__ . '/BaseController.php';
@@ -73,7 +73,7 @@ class AuthController extends BaseController {
         ]);
     }
     
-    // NUEVO: Login de Docente
+    // Login de Docente
     public function loginDocente() {
         // Si ya está autenticado, redirigir al panel
         if ($this->authService->estaAutenticado('docente')) {

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // views/admin/convocatorias/index.php
 // Variables: $convocatorias, $success, $error
 
