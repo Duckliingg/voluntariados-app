@@ -68,7 +68,7 @@ class Insignia extends BaseModel {
     }
 
     /**
-     * Obtener todas las insignias (incluye inactivas)
+     * Obtener todas las insignias
      */
     public function obtenerTodas() {
         $cursor = $this->collection->find(
@@ -116,7 +116,7 @@ class Insignia extends BaseModel {
     }
 
     /**
-     * Buscar por tipo (mantener compatibilidad)
+     * Buscar por tipo 
      */
     public function buscarPorTipo($tipo) {
         return $this->buscarPorCategoria($tipo);
@@ -137,7 +137,7 @@ class Insignia extends BaseModel {
     }
 
     /**
-     * Buscar por ID (alias para compatibilidad)
+     * Buscar por ID 
      */
     public function buscarPorId($id) {
         return $this->obtenerPorId($id);

@@ -22,6 +22,12 @@ RUN a2enmod rewrite
 # Copiar código fuente
 COPY . /var/www/html/
 
+# Establecer directorio de trabajo
+WORKDIR /var/www/html
+
+# Ejecutar Composer para generar vendor/
+RUN composer install --no-dev --optimize-autoloader
+
 # Permisos
 RUN chown -R www-data:www-data /var/www/html
 

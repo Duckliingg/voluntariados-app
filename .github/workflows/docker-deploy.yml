@@ -26,10 +26,17 @@ jobs:
         run: |
           docker push duckliingg/voluntariados-app:latest
 
-      - name: Run container to test DB connections
+      - name: Start container for tests
         run: |
           docker run -d --name test-app duckliingg/voluntariados-app:latest
           sleep 10
+
+      - name: Install Composer dependencies
+        run: |
+          docker exec test-app composer install --no-dev --optimize-autoloader
+
+      - name: Run container to test DB connections
+        run: |
           docker exec test-app php /var/www/html/test_mysql.php
           docker exec test-app php /var/www/html/test_mongo.php
 
