@@ -1,4 +1,5 @@
 <?php
+// views/layouts/header.php
 ?>
 <!DOCTYPE html>
 <html lang="es">
